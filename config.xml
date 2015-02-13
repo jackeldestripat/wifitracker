@@ -27,11 +27,11 @@
     <preference name="android-installLocation" value="auto" />
     <preference name="SplashScreenDelay" value="0" />
 	
+	<gap:plugin name="com.pylonproducts.wifiwizard" version="0.1.0" />
 	<feature name="WifiWizard">
 				<param name="android-package" value="com.pylonproducts.wifiwizard.WifiWizard" />
-				<param name="onload" value="true" />
-			</feature>
-	<gap:plugin name="com.pylonproducts.wifiwizard"/>
+	</feature>
+
 	
     <access origin="*" />
 
