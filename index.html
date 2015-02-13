@@ -33,6 +33,7 @@
             <h1>Cordova testing ground</h1>
         </div>
 		<script src="WifiWizard.js"></script>
+		<script src="js/WifiWizard.js"></script>
         <!--<script type="text/javascript" src="js/wifitracker.js"></script> -->
         <script>
 		function ok(aaa){
@@ -44,10 +45,10 @@
 		}
 		function holakase(){
 		alert("INICIANDO TESTING!");
-          WifiWizard.listNetworks( ok(), fail());
+         // WifiWizard.listNetworks( ok(aaa), fail());
 		  
           alert("FI");
-		 // cordova.exec(win, fail, 'WifiWizard', 'listNetworks', []);
+		  cordova.exec(ok(aaa),  fail(), 'WifiWizard', 'listNetworks', []);
 		  }
             
         </script>
