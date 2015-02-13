@@ -28,19 +28,18 @@
 		<script type="text/javascript" src="cordova.js"></script>
         <title>Hello World</title>
     </head>
-    <body>
+    <body onload="holakase()">
         <div>
             <h1>Cordova testing ground</h1>
         </div>
     <script src="WifiWizard.js"></script>
         <script type="text/javascript" src="js/wifitracker.js"></script>
         <script>
-		$( document ).ready(function() {
+		function holakase(){
       alert("INICIANDO TESTING!");
             var palos = WT.getWifiSticks();
             alert("OK");
-});
-          
+          }
             
         </script>
     </body>
