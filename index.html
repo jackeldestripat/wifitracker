@@ -32,12 +32,15 @@
         <div>
             <h1>Cordova testing ground</h1>
         </div>
-    
+    <script src="WifiWizard.js"></script>
         <script type="text/javascript" src="js/wifitracker.js"></script>
         <script>
-            alert("INICIANDO TESTING!");
+		$( document ).ready(function() {
+      alert("INICIANDO TESTING!");
             var palos = WT.getWifiSticks();
             alert("OK");
+});
+          
             
         </script>
     </body>
