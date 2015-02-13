@@ -35,22 +35,19 @@
 		<script src="WifiWizard.js"></script>
         <!--<script type="text/javascript" src="js/wifitracker.js"></script> -->
         <script>
-		function ok(networks){
-		alert("---ok----"+networks);
+		function ok(){
+		alert("---ok----");
 		}
 		
-		function fail(error){
-		alert("---fail----"+error);
+		function fail(){
+		alert("---fail----");
 		}
-		
 		function holakase(){
 		alert("INICIANDO TESTING!");
-		  var aaa="OK";
-		  var eee="FAIL";
-          WifiWizard.listNetworks( ok(networks), fail(error));
-          alert("OK");
-    
-		   alert("SuperOK");
+          WifiWizard.listNetworks( ok(), fail());
+		  
+          alert("FI");
+		 // cordova.exec(win, fail, 'WifiWizard', 'listNetworks', []);
 		  }
             
         </script>
